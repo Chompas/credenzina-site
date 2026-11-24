@@ -28,15 +28,17 @@
     <li><strong>Pasting a link</strong> (an Apple Music or Spotify album URL) makes the app fetch that page's public metadata to work out which album you meant. No account or API key is involved, and nothing about you is sent beyond the link itself.</li>
     <li><strong>Album artwork</strong> is downloaded from Apple's servers and cached on your device so covers don't have to be downloaded again.</li>
     <li><strong>Scanning a screenshot</strong> uses Apple's on-device Vision framework to read text from an image you choose. The image is never uploaded. Recognition happens entirely on your device, and only the album names it finds are used to run the searches described above.</li>
+    <li><strong>Noticing what you play</strong> is optional and off until you turn it on. When it's on, Credenzina asks Apple Music for your recently played albums through Apple's MusicKit and compares them with your queue on your device. Only the album identifiers needed for the next comparison are kept, and nothing from your listening history is sent anywhere else.</li>
+    <li><strong>Last.fm scrobbling</strong> is optional and off until you connect your Last.fm account. You sign in on Last.fm's own page, so Credenzina never sees your password; it keeps only the access key Last.fm returns, in your device's Keychain. When you mark an album as listened, its track names, the album and artist, and the times they were played are sent to Last.fm to add to your profile. Last.fm's own privacy policy covers what happens there. Disconnecting removes the key from your device.</li>
     <li><strong>Playing an album</strong> hands off to the Apple Music or Spotify app you choose. What happens after that is between you and that app.</li>
   </ul>
 
   <h2>What Credenzina does not do</h2>
   <ul>
-    <li>No accounts, sign-in, or personal profile.</li>
+    <li>No Credenzina accounts, sign-in, or personal profile.</li>
     <li>No analytics, crash reporting, or usage tracking.</li>
     <li>No advertising or ad networks.</li>
-    <li>No sharing of your data with anyone. There's nothing collected to share.</li>
+    <li>No sharing of your data with anyone, apart from the Last.fm scrobbles you choose to turn on.</li>
   </ul>
 
   <h2>Children's privacy</h2>
